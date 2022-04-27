@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://127.0.0.1:7000/js/client"></script>
+    <link rel="stylesheet" type="text/css" href="http://127.0.0.1:7000/css/client">
+    <title>linux btw</title>
+</head>
+<body>
+
+    <style>
+        a:link {
+            color: gray;
+        }
+
+        a:visited {
+            color: gray;
+        }
+    </style>
+
+    <div class="middle">
+        <div id="presentation">
+            <div id="text" class="middleText">
+                <div style="text-align: center;">
+                    W czym i jak został napisany GNU/linux
+                </div> 
+                <br><br>
+                <div style="font-size: 20px; width: 750px; margin: auto; transform:translateX(15px);">
+                    linux został głównie napisany w C (ok 99%) oraz assembly (0.9%) <br>
+                    jedyne pliki C++ w repo są tylko w tools/perf/util/c++ <a href="https://github.com/torvalds/linux/tree/master/tools/perf/util/c%2B%2B" target="_blank"> link</a> <br><br>
+
+                    C++ nie został użyty jako główny język ponieważ jego zdaniem ten język jest okropnym językiem <br> <br>
+
+                    mówi on że nieważne co C++ nie jest najbardziej poprawnym wyborem <br>
+                    C może być bezpośrednio użyty w programowaniu systemowym, <br>
+                    Najlepszym wyborem jest wybrać język z garbage colectorem (Odśmiecanie pamięci więcej o tym: <a href="https://pl.wikipedia.org/wiki/Od%C5%9Bmiecanie_pami%C4%99ci" target="_blank"> info</a> ) <br> <br>
+
+
+                    W programowaniu, tworzeniu własnego systemu najważniejszym wyborem zawsze będzie język programowania <br><br>
+
+                    jeżeli chcemy np pisać język za pomocą pythona (tak dla przykładu) to musielibyśmy napisać interpreter tego języka, Ale za to jeżeli wybierzemy język taki jak C to możemy zbudować system za pomocą kompilatora GCC 
+                    (trzeba niestety zbudować lub pobrać z mirrora wersję i686) bez pisania własnego interpretera. Dalej będziemy musieli napisać własne biblioteki do obsługiwania np: VGA, TTY, GDT itp.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

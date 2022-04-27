@@ -128,29 +128,29 @@ func ControllerSite(writer http.ResponseWriter, request *http.Request) {
 func ClientSite(writer http.ResponseWriter, request *http.Request) {
 	switch request.URL.Query().Get("page") {
 	case "":
-		fmt.Fprintf(writer, string(data.P1))
+		fmt.Fprintf(writer, "%s" ,string(data.P1))
 	case "1":
-		fmt.Fprintf(writer, string(data.P1))
+		fmt.Fprintf(writer, "%s" ,string(data.P1))
 	case "2":
-		fmt.Fprintf(writer, string(data.P2))
+		fmt.Fprintf(writer, "%s" ,string(data.P2))
 	case "3":
-		fmt.Fprintf(writer, string(data.P3))
+		fmt.Fprintf(writer, "%s" ,string(data.P3))
 	case "4":
-		fmt.Fprintf(writer, string(data.P4))
+		fmt.Fprintf(writer, "%s" ,string(data.P4))
 	case "5":
-		fmt.Fprintf(writer, string(data.P5))
+		fmt.Fprintf(writer, "%s" ,string(data.P5))
 	case "6":
-		fmt.Fprintf(writer, string(data.P6))
+		fmt.Fprintf(writer, "%s" ,string(data.P6))
 	case "7":
-		fmt.Fprintf(writer, string(data.P7))
+		fmt.Fprintf(writer, "%s" ,string(data.P7))
 	case "8":
-		fmt.Fprintf(writer, string(data.P8))
+		fmt.Fprintf(writer, "%s" ,string(data.P8))
 	case "9":
-		fmt.Fprintf(writer, string(data.P9))
+		fmt.Fprintf(writer, "%s" ,string(data.P9))
 	case "10":
-		fmt.Fprintf(writer, string(data.P10))
+		fmt.Fprintf(writer, "%s" ,string(data.P10))
 	default:
-		fmt.Fprintf(writer, string(data.P1))
+		fmt.Fprintf(writer, "%s" ,string(data.P1))
 	}
 
 }
@@ -162,7 +162,7 @@ func ControllerJS(writer http.ResponseWriter, request *http.Request) {
 
 func ClientCSS(writer http.ResponseWriter, request *http.Request) {
 	writer.Header().Set("Content-Type", "text/css; charset=utf-8")
-	fmt.Fprintf(writer, "%s", data.ClientCSS)
+	fmt.Fprintf(writer, "%s", string(data.ClientCSS))
 }
 
 func ClientJS(writer http.ResponseWriter, request *http.Request) {
